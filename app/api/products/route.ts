@@ -1,4 +1,10 @@
+import { todos } from '@/data/mock';
+import prisma from '@/libs/prisma';
+
 // GET, POST, DELETE, PUT /api/products
 export async function GET() {
-  return Response.json({ message: 'Hello API End Point' });
+  await prisma.todo.deleteMany();
+  await prisma.todo.createMany({ data: todos });
+
+  return Response.json({ message: 'DB seeded successfully' });
 }

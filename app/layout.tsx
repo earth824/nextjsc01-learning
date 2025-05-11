@@ -32,6 +32,7 @@ export default function RootLayout({
             Book
           </Link>
           <Link href="/project/1234">Project</Link>
+          <Link href="/todo">Todo</Link>
         </div>
         {children}
       </body>
