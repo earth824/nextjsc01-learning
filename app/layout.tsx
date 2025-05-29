@@ -33,6 +33,8 @@ export default function RootLayout({
           </Link>
           <Link href="/project/1234">Project</Link>
           <Link href="/todo">Todo</Link>
+          <Link href="/initial-render">Initial render</Link>
+          <Link href="/sub-render">Sub Render</Link>
         </div>
         {children}
       </body>
